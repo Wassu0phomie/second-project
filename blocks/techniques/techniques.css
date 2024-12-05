@@ -1,0 +1,65 @@
+.techniques {
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Это позволит элементам располагаться вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; 
+    text-align: center;
+    margin-top: 100px;
+}
+  
+.cards {
+    display: flex; /* Включаем Flexbox */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку, если не хватает места */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: auto;
+    width: 920px;
+    text-align: center;
+}
+
+.cards__item {
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину */
+    padding: 0px; /* Добавляем отступы внутри элементов */
+    width: 240px;
+    margin: 60px 100px 0 0;
+}
+
+.cards__image-circle {
+    width: 160px; /* Ширина круга */
+    height: 160px; /* Высота круга */
+    border-radius: 50%; /* Делаем изображение круглым */
+    object-fit: cover; /* Обрезаем изображение, чтобы оно заполнило круг */
+}
+
+.cards__title {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;    
+}  
+
+.cards__description {
+    padding-top: 16px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.cards__item:nth-child(3) {
+    margin-right: 0; /* Убираем отступ справа */
+}
+
+
+/* Убираем отступ справа для пятой карточки */
+.cards__item:nth-child(5) {
+    margin-left: 0; /* Убираем отступ справа */
+}

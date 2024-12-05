@@ -1,0 +1,83 @@
+@import url("/rotation/rotation.css");
+
+.kaufman {
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Это позволит элементам располагаться вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; 
+    text-align: center;
+    padding: 90px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-color: #1f1f1f;
+  }
+  
+  .section-title_theme_dark {
+    width: 60%;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .section-subtitle_theme_dark {
+    margin-top: 20px;
+    width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .table_theme_dark {
+    display: flex; /* Включаем Flexbox */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку, если не хватает места */
+    list-style-type: none; /* Убираем маркеры списка */
+    justify-content: space-between;
+    padding: 0; /* Убираем отступы */
+    margin: auto;
+    width: 1100px;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .table__cell_theme_dark {
+    width: 200px;
+    margin-right: 0;
+    margin-top: 80px;
+  }
+  .table__cell_theme_dark:nth-of-type(5n){
+    margin-right: 0;
+  } 
+  .table__heading_theme_dark {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .table__text_theme_dark {
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+  
+  }
+  .kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    right:-210px;
+    background-image: url("/images/kaufman-triangle.svg");
+    z-index: 0;
+    animation: rotation 20s linear infinite;
+  }

@@ -1,0 +1,81 @@
+.footer {
+    min-width: 1100px;
+    min-height: 350px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    display: flex;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1f1f1f;
+    flex-basis: 711px;
+    justify-content: center; 
+    color: white;
+  }
+  
+  .footer__columns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__column_content_copyright {
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  .logo_place_footer {
+    background-image: url("/images/logo_place_footer.svg");
+  }
+  
+  .footer__author {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: inline-block; 
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .footer__column_content_info {
+    width: 12.5%; /* 1/8 ширины */
+    display: block;
+  }
+  .footer__column_content_social {
+    width: 12.5%; /* 1/8 ширины */
+  }
+  .footer__column-heading {
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+  
+  }
+  
+  .column__links {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: auto;
+    display: block;
+    justify-content: space-between;
+  }
+  .column__link {
+    height: auto;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .column__link:nth-of-type(2n){
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+  .column__link a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет от родительского элемента */
+  }

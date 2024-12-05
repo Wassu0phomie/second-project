@@ -1,0 +1,66 @@
+.digits {
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Это позволит элементам располагаться вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; 
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .section-title {
+    width: 60%;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .section-subtitle {
+    margin-top: 20px;
+    width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .table {
+    display: flex; /* Включаем Flexbox */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку, если не хватает места */
+    list-style-type: none; /* Убираем маркеры списка */
+    justify-content: space-between;
+    padding: 0; /* Убираем отступы */
+    margin: auto;
+    width: 1100px;
+    text-align: left;
+  }
+  
+  .table__cell {
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину */
+    padding: 0px; /* Добавляем отступы внутри элементов */
+    width: 250px;
+    margin: 60px 20px 0 0;
+  }
+  .table__cell:nth-of-type(4n){
+    margin-right: 0;
+  } 
+  .table__heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    
+  }
+  .table__text {
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+  
+  }

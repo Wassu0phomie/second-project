@@ -1,0 +1,28 @@
+.video {
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Это позволит элементам располагаться вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; 
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+.video__iframes {
+    display: flex; /* Включаем Flexbox */
+    gap: 20px; /* Устанавливаем отступ между элементами в 10 пикселей */
+    padding: 0; /* Убираем отступы */
+    margin: 50px auto 0;
+    width: auto;
+    height: 316px;
+}
+
+
